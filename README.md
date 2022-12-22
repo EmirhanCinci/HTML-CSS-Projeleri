@@ -1,2 +1,3 @@
-# HTML-CSS-Projeleri
-HTML ve CSS ile oluşturduğum projeler
+# HTML ve CSS ile Oluşturduğum Projeler
+
+1. Batarya Dolum Animasyonu
