@@ -133,4 +133,4 @@ body {
 
 ## Batarya Dolum Animasyonunun Video Tanıtım Bağlantısı
 
-* Video bağlantısı için <a href="#">tıklayınız</a>.
+* Video bağlantısı için <a href="https://www.youtube.com/watch?v=onCjJP5Hmyk">tıklayınız</a>.
