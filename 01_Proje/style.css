@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #ff0000, #0000ff);
+}
+
+.battery-head {
+    width: 30px;
+    height: 10px;
+    margin: 0 auto;
+    border: 4px solid #9e9e9e;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #000;
+}
+
+.battery-body {
+    width: 100px;
+    height: 200px;
+    margin: 0 auto;
+    border: 4px solid #9e9e9e;
+    border-radius: 18px;
+    background-color: #000;
+    position: relative;
+}
+
+.battery-body i {
+    color: #fff;
+    font-size: 36px;
+    z-index: 99;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    animation: battery-bolt 2s linear infinite;
+}
+
+@keyframes battery-bolt {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.battery-charge {
+    width: 100%;
+    border-radius: 14px;
+    position: absolute;
+    bottom: 0;
+    animation: battery-charge 8s linear infinite;
+}
+
+@keyframes battery-charge {
+    0% {
+        height: 0;
+        background-color: #ff0000;
+    }
+    25% {
+        height: 25%;
+        background-color: #ff9100;
+    }
+    50% {
+        height: 50%;
+        background-color: #fff200;
+    }
+    75% {
+        height: 75%;
+        background-color: #d7fc03;
+    }
+    100% {
+        height: 100%;
+        background-color: #00ff00;
+    }
+}
