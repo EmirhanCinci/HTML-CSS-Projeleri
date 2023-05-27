@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #ff0000, #0000ff);
+}
+
+/* battery etiketi */
+.battery {
+    display: flex;
+    align-items: center;
+}
+
+/* battery-body etiketi */
+.battery-body {
+    width: 200px;
+    height: 100px;
+    border: 4px solid #9e9e9e;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+i {
+    color: #fff;
+    font-size: 45px;
+    z-index: 1;
+    animation: battery-bolt 2s linear infinite;
+}
+
+/* İkon animasyonu */
+@keyframes battery-bolt {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+/* battery-charge etiketi */
+.battery-charge {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 14px;
+    animation: battery-charge 8s linear infinite;
+}
+
+/* Dolum animasyonu */
+@keyframes battery-charge {
+    0% {
+        width: 0%;
+        background-color: #ff0000;
+    }
+    25% {
+        width: 25%;
+        background-color: #ff9100;
+    }
+    50% {
+        width: 50%;
+        background-color: #fff000;
+    }
+    75% {
+        width: 75%;
+        background-color: #d7f303;
+    }
+    100% {
+        width: 100%;
+        background-color: #00ff00;
+    }
+}
+
+/* battery-head etiiketi */
+.battery-head {
+    width: 10px;
+    height: 30px;
+    border: 4px solid #9e9e9e;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #000;
+}

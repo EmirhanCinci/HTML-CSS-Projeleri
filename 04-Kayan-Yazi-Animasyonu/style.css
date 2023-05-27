@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+}
+
+h2 {
+    font-size: 54px;
+    margin-bottom: 50px;
+}
+
+p {
+    padding: 0px 50px;
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    margin: 30px 15px;
+    padding: 8px 15px;
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/* page etiketi */
+.page {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* page-1 etiketi */
+#page-1 {
+    background-color: #313552;
+}
+
+/* page-2 etiketi */
+#page-2 {
+    background-color: #B8405E;
+}
+
+/* page-3 etiketi */
+#page-3 {
+    background-color: #2EB086;
+}
+
+/* page-1 içerisindeki h2 etiketi */
+#page-1 > h2 {
+    transform: translateY(-800px);
+    animation: sayfa_1_baslik_animasyonu 2s forwards ease-in;
+}
+
+/* Başlık animasyonu */
+@keyframes sayfa_1_baslik_animasyonu {
+    to {
+        transform: translateY(0px);
+    }
+}
+
+/* page-1 içerisindeki p etiketi */
+#page-1 > p {
+    transform: translateX(-1500px);
+    animation: sayfa_1_paragraf_animasyonu 2s forwards ease-in;
+}
+
+/* Paragraf animasyonu */
+@keyframes sayfa_1_paragraf_animasyonu {
+    to {
+        transform: translateX(0px);
+    }
+}
