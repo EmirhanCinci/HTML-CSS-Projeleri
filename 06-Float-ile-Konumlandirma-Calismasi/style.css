@@ -58,3 +58,15 @@ main {
 p {
     margin: 15px 0px;
 }
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .menu {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
