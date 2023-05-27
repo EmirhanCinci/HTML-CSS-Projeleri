@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header ve footer etiketleri */
+header, footer {
+    padding: 15px;
+    color: #FFBD35;
+    background-color: #8267be;
+}
+
+/* main etiketi */
+main {
+    display: block;
+    padding: 25px 0px;
+}
+
+.clear-fix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* menu etiketi */
+.menu {
+    width: 25%;
+    padding: 0px 15px;
+    float: left;
+}
+
+.item {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #fff;
+    background-color: #502064;
+    transition: all 0.8s;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: #8267be;
+}
+
+/* content etiketi */
+.content {
+    width: 75%;
+    padding: 0px 15px;
+    float: left;
+}
+
+.content > h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 15px 0px;
+}

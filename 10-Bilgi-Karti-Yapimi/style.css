@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9e9e9e;
+}
+
+/* container etiketi */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+/* card etiketi */
+.card {
+    width: 300px;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    border: 4px solid #fff;
+    border-radius: 18px;
+    background: url(images/logo.jpg) center center no-repeat;
+    background-size: 300px;
+    transition: all 0.8s;
+}
+
+.card:hover {
+    background: url(images/logo.jpg) center left no-repeat;
+    background-size: 600px;
+}
+
+hr {
+    margin: 0 10px;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.card:hover hr {
+    opacity: 1;
+}
+
+/* card-head etiketi */
+.card-head {
+    padding: 10px;
+}
+
+/* card-body etiketi */
+.card-body {
+    padding: 10px;
+    text-align: justify;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.card:hover .card-body {
+    opacity: 1;
+}
+
+.card-body > p {
+    margin-top: 8px;
+}
+
+/* card-footer etiketi */
+.social-links {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    list-style-type: none;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.card:hover .social-links {
+    opacity: 1;
+}
+
+.social-links > li > a {
+    font-size: 36px;
+}
+
+.social-links > li > a > i {
+    transition: all 0.8s;
+}
+
+.social-links > li > a > i:hover {
+    transform: scale(1.3);
+}
+
+.fa-facebook-square {
+    color: blue;
+}
+
+.fa-twitter {
+    color: deepskyblue;
+}
+
+.fa-instagram {
+    color: crimson;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-github {
+    color: #fff;
+}
+
+.fa-linkedin {
+    color: dodgerblue;
+}

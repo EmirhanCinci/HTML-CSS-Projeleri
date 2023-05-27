@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* container etiketi */
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* box etiketi */
+.box {
+    position: absolute;
+    border: 8px solid #000;
+}
+
+/* box-1 etiketi */
+.box-1 {
+    width: 20%;
+    height: 60%;
+}
+
+/* box-2 etiketi */
+.box-2 {
+    left: 20%;
+    width: 40%;
+    height: 30%;
+}
+
+/* box-3 etiketi */
+.box-3 {
+    left: 60%;
+    width: 40%;
+    height: 30%;
+}
+
+/* box-4 etiketi */
+.box-4 {
+    top: 30%;
+    left: 20%;
+    width: 20%;
+    height: 40%;
+}
+
+/* box-5 etiketi */
+.box-5 {
+    top: 30%;
+    left: 40%;
+    width: 40%;
+    height: 40%;
+}
+
+/* box-6 etiketi */
+.box-6 {
+    top: 30%;
+    left: 80%;
+    width: 20%;
+    height: 70%;
+}
+
+/* box-7 etiketi */
+.box-7 {
+    top: 60%;
+    width: 20%;
+    height: 40%;
+}
+
+/* box-8 etiketi */
+.box-8 {
+    top: 70%;
+    left: 20%;
+    width: 40%;
+    height: 30%;
+}
+
+/* box-9 etiketi */
+.box-9 {
+    top: 70%;
+    left: 60%;
+    width: 20%;
+    height: 30%;
+}

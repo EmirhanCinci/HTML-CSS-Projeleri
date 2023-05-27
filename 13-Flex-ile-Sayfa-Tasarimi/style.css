@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+
+a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/* header etiketi */
+header {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: goldenrod;
+}
+
+header > h1 {
+    padding-top: 25px;
+}
+
+header > p {
+    padding: 20px;
+}
+
+#main-nav {
+    background-color: #000;
+}
+
+/* container etiketi */
+.container {
+    width: 100%;
+    display: flex;
+}
+
+/* content etiketi */
+.content {
+    width: 75%;
+}
+
+.content-item > h3, .side-item > h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.content-item, .side-item {
+    padding: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #9e9e9e;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* side-content etiketi */
+.side-content {
+    width: 25%;
+    background-color: #ddd;
+}
+
+.link {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border-radius: 8px;
+    background-color: #9e9e9e;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* footer etiketi */
+footer {
+    padding: 20px 0px;
+    color: #fff;
+    text-align: center;
+    background-color: goldenrod;
+}
+
+/* Responsive tasarım için */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        order: 1;
+    }
+
+    .side-content {
+        width: 100%;
+    }
+}
